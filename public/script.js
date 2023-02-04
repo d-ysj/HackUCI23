@@ -12,7 +12,11 @@ function searchRecipes() {
 
     fetch('./api?ingr=' + searchInput, options)
         .then(response => response.json())
-        .then(response => console.log(response))
+        .then(response => {
+            document.body.innerHTML += response[0].title;
+            document.body.innerHTML += `<img src="${response[0].image}" />`;
+
+        })
         .catch(err => console.error(err))
 }
 
