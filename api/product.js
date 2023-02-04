@@ -1,18 +1,27 @@
-const express = require("express");
-const router = express.Router();
+const request = require('request');
+const express = require('express');
 
+let ingrList = 'chicken,tomato,pepper,cheese';
+const app = express();
 
-router.get("/", async (req, res) => {
-    try {
-        res.json({
-            status: 200,
-            message: "Get data has succesfully",
+const options = {
+  method: 'GET',
+  url: 'https://api.spoonacular.com/recipes/findByIngredients',
+  qs: {
+    apiKey: '0ce380dcbd274d5b8203bbca9a7cb1b8',
+    ingredients: ingrList,
+    ignorePantry: 'true',
+    ranking: '2'
+  }
+};
+//routes 
+app.get('/',(req,res) => {
+request(options, function (error, response, body) {
+  if (error) throw new Error(error);
 
-        })
-    } catch (error) {
-        console.error(error);
-        return res.status(500).send("Server error");
-    }
-})
+  console.log(body);
 
-module.exports = router;
+  res.send(response);
+});
+});
+
