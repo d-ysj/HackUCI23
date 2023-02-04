@@ -26,4 +26,4 @@ app.get('/', (req, res) => {
     });
 });
 
-modules.export = app;
+module.export = app;
