@@ -21,7 +21,7 @@ request(options, function (error, response, body) {
 
   console.log(body);
 
-  res.send(response);
+  res.json({response});
 });
 });
 
