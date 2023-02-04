@@ -1,0 +1,225 @@
+/* font-family: Arial, Helvetica, sans-serif; */
+/* font-family: "Poppins", sans-serif; */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* position: relative; */
+    /* background-color: #24252A; */
+    background-color: rgb(250, 234, 236);
+    ;
+    min-height: 200vh;
+    /* width: 100%;
+        height: 100%; */
+}
+
+/* ---------------- NAVIGATION BAR ---------------- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* font-family: 'Montserrat', sans-serif; */
+    /* background-color: #32343b; */
+
+    /* justify-content: space-around; */
+    /* justify-content: flex-end; */
+
+    transition: 0.6s;
+    padding: 40px 100px;
+
+    z-index: 100000;
+}
+
+nav .logo {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    margin-right: auto;
+    position: relative;
+    transition: 0.6s;
+}
+
+nav a.logo:hover {
+    color: rgb(203, 196, 196);
+}
+
+nav .nav-links {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+    width: 25%;
+}
+
+nav .nav-links a {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    position: relative;
+    padding: 0px 16px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links a:hover {
+    color: rgb(203, 196, 196);
+}
+
+#contact {
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: rgba(0, 136, 169, 1); */
+    background-color: rgb(250, 218, 221);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+
+    padding: 6px 14px;
+    transition: all 0.3s ease 0s;
+    position: relative;
+}
+
+#contact:hover {
+    color: rgb(225, 225, 225);
+    background-color: rgba(6, 82, 101, 0.8);
+    box-shadow: 2px 2px 8px rgb(132, 131, 131);
+}
+
+/* ----- sticky effect ----- */
+.sticky ul li a,
+.sticky .logo {
+    color: black;
+}
+
+nav.sticky {
+    height: 0;
+    /* padding: 0px, 0px; */
+    /* padding: 0; */
+    padding: 24px 7%;
+    background: #fff;
+    /* background: #24252A; */
+}
+
+/* ---------------- BACKGROUND IMAGE/TEXT ---------------- */
+.banner {
+    /* color: white; */
+    /* position: relative; */
+    /* position: fixed; */
+    width: 100%;
+    height: 100vh;
+    background: url(../img/picnic2.jpg);
+    background-size: cover;
+    /* z-index: -10; */
+    /* background-color: transparent; */
+    background-attachment: fixed;
+}
+
+.banner-letter {
+    /* color: white; */
+    font-size: large;
+    font-weight: 300;
+    /* top: 380px; */
+    top: 40%;
+    position: relative;
+    /* position: fixed; */
+    text-align: center;
+    /* vertical-align: middle; */
+}
+
+.banner-letter #name {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: 2000;
+    /* color: black; */
+    letter-spacing: 5px;
+}
+
+.banner-letter #school {
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* #credit {
+        position: relative;
+        position: fixed;
+        left: 50%;
+        top: 92%;
+        transform: translate(-50%, -50%);
+    } */
+
+/* ---------------- BIOGRAPHY ---------------- */
+start {
+    /* top: 40px; */
+    color: white;
+    top: 20vh;
+    /* position: relative; */
+    /* position: absolute; */
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 50px 50px;
+    color: black;
+}
+
+start h2 {
+    font-size: 36px;
+}
+
+start p {
+    font-size: 16px;
+}
+
+/* about #aboutme {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 36px;
+    } */
+
+/* ---------------- PROJECTS ---------------- */
+projects {
+    /* color: white; */
+    color: black;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+/* ---------------- PHOTOGRAPHY ---------------- */
+etc {
+    /* color: white; */
+    color: black;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+/* ---------------- CONTACT ---------------- */
+contact {
+    /* color: white; */
+    color: black;
+    text-align: center;
+    padding: 50px 50px;
+}
