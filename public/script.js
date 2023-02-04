@@ -1,15 +1,15 @@
-const options = {method: 'GET'};
+const options = { method: 'GET' };
 
 function callAPI(searchInput) {
     fetch('')
-    .then(response => {response.json()});
+        .then(response => { response.json() });
 }
 
 function searchRecipes() {
     let searchInput = document.getElementById('search').value;
     var searchList = searchInput.split(', ')
 
-    fetch('https://hack-uci-23.vercel.app/api/product', options)
+    fetch('/api/product', options)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err))
