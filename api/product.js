@@ -19,6 +19,7 @@ const options = {
 //routes 
 app.get('/api/product', (req, res) => {
     console.log("product api called");
+    console.log(req);
     request(options, function (error, response, body) {
         if (error) throw new Error(error);
 
