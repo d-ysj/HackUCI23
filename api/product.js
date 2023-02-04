@@ -2,7 +2,8 @@ const request = require('request');
 const express = require('express');
 
 let ingrList = 'chicken,tomato,pepper,cheese';
-const app = express();
+const router = express.Router();
+// const app = express();
 
 
 const options = {
@@ -16,7 +17,7 @@ const options = {
     }
 };
 //routes 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     request(options, function (error, response, body) {
         if (error) throw new Error(error);
 
@@ -26,4 +27,4 @@ app.get('/', (req, res) => {
     });
 });
 
-module.export = app;
+module.export = router;
