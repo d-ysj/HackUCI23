@@ -25,10 +25,10 @@ function searchRecipes() {
 
     const options = {method: 'GET'};
 
-fetch('https://hack-uci-23.vercel.app/api/product', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
+    fetch('https://hack-uci-23.vercel.app/api/product', options)
+        .ten(response => response.json())
+        .then(response => console.log(response))
+        .catch(err => console.error(err))
 }
 
 
