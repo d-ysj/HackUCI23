@@ -7,9 +7,10 @@ function callAPI(searchInput) {
 
 function searchRecipes() {
     let searchInput = document.getElementById('search').value;
-    var searchList = searchInput.split(', ')
 
-    fetch('/api/product', options)
+    //var searchList = searchInput.split(', ')
+
+    fetch('https://hack-uci-23.vercel.app/api/product?ingr=%27+searchInput', options)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err))
