@@ -10,7 +10,7 @@ function searchRecipes() {
 
     //var searchList = searchInput.split(', ')
 
-    fetch('https://hack-uci-23.vercel.app/api/product?ingr=' + searchInput, options)
+    fetch('./api?ingr=' + searchInput, options)
         .then(response => response.json())
         .then(response => console.log(response))
         .catch(err => console.error(err))
