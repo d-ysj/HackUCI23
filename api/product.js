@@ -1,15 +1,9 @@
 const request = require('request');
 const express = require('express');
-const cors = require('cors');
 
 let ingrList = 'chicken,tomato,pepper,cheese';
 const app = express();
 
-app.use(cors({
-    origin: 'https://hack-uci-23.vercel.app',
-    credentials: true,
-    optionSuccessStatus: 200,
-}))
 
 const options = {
     method: 'GET',
