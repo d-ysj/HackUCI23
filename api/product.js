@@ -2,7 +2,7 @@ const request = require('request');
 const express = require('express');
 
 let ingrList = 'chicken,tomato,pepper,cheese';
-const router = express.Router();
+const app = express();
 // const app = express();
 
 
@@ -17,7 +17,8 @@ const options = {
     }
 };
 //routes 
-router.get('/', (req, res) => {
+app.get('/api/product', (req, res) => {
+    console.log("product api called");
     request(options, function (error, response, body) {
         if (error) throw new Error(error);
 
@@ -27,4 +28,4 @@ router.get('/', (req, res) => {
     });
 });
 
-module.export = router;
+module.exports = app;
