@@ -5,7 +5,7 @@ let ingrList = 'chicken,tomato,pepper,cheese';
 const app = express();
 
 //routes 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
 
     const options = {
         method: 'GET',
@@ -22,10 +22,14 @@ app.get('/', (req, res) => {
         console.log(req);
         console.log(body);
 
-        res.json(response);
+        res.json(JSON.parse(body));
     });
 });
 
-app.listen(5050, () => {
-    console.log('Running project on port $(port)');
-});
+module.exports = app;
+
+// export 
+
+// app.listen(5050, () => {
+//     console.log('Running project on port $(port)');
+// });
