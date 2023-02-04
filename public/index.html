@@ -18,29 +18,22 @@
 <body>
     <!-- -------------------------------- Navigation -------------------------------- -->
     <nav>
-        <a href="#" class="logo">Recipeasy</a>
-        <!-- <div class="logo" href="#">
-        </div> -->
+        <a class="logo" href="#">Recipeasy</a>
         <ul class="nav-links">
         </ul>
-        <a href=""><button id="contact">Contact</button></a>
+        <a href=""><button class="button">Contact</button></a>
     </nav>
 
-    <!-- <script type=" text/javascript">
-        window.addEventListener("scroll", function () {
-        var nav = document.querySelector("nav");
-        nav.classList.toggle("sticky", window.scrollY > 0);
-        })
-        </script> -->
-
+    <!--Section1-->
     <section class="banner">
         <div class="banner-letter">
-            <p id="name">Recipeasy<br>app</p>
-            <BR>
-            <p id="school">Seach bar here<BR>!!!</p>
+            <h1 id="name">Recipeasy</h1>
+            <br>
+            <br>
+            <input id="search" placeholder="What's in your kitchen">
+            <button class="button" onclick="searchRecipes()">Search</button>
         </div>
     </section>
-
 
 </body>
 
