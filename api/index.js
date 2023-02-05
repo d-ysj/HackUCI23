@@ -42,11 +42,11 @@ app.get('/api', (req, res) => {
         method: 'GET',
         url: 'https://api.spoonacular.com/recipes/findByIngredients',
         qs: {
-            apiKey: '5b9e70cd3328410cb3e68f3a26212f08',
+            apiKey: '905ffe5d56f44e5e99d5b971cc4ce35e',
             ingredients: req.query.ingr,
             ignorePantry: 'true',
             ranking: '1',
-            number: '10'
+            number: '5'
         }
     };
     let idString = '';
@@ -82,7 +82,7 @@ app.get('/api', (req, res) => {
             method: 'GET',
             url: 'https://api.spoonacular.com/recipes/informationBulk',
             qs: {
-                apiKey: '5b9e70cd3328410cb3e68f3a26212f08',
+                apiKey: '905ffe5d56f44e5e99d5b971cc4ce35e',
                 ids: idString,
                 includeNutrition: 'false'
             }

@@ -1,5 +1,8 @@
 /* font-family: Arial, Helvetica, sans-serif; */
 /* font-family: "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -15,7 +18,7 @@ html {
 body {
     /* position: relative; */
     /* background-color: #24252A; */
-    background-color: rgb(250, 234, 236);
+    background-color: #d6cbb6;
     min-height: 200vh;
     /* width: 100%;
         height: 100%; */
@@ -89,7 +92,7 @@ nav .nav-links a {
     font-size: 16px;
     font-weight: 500;
     /* background-color: rgba(0, 136, 169, 1); */
-    background-color: rgb(250, 218, 221);
+    background-color: #c4c98e;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -117,7 +120,7 @@ nav.sticky {
     /* padding: 0px, 0px; */
     /* padding: 0; */
     padding: 24px 7%;
-    background: #fff;
+    background: #dbddc3;
     /* background: #24252A; */
 }
 
@@ -148,9 +151,26 @@ nav.sticky {
     text-shadow: 1px 1px 1px black;
 }
 
+.banner-letter p {
+    /* color: white; */
+    font-size: large;
+    font-weight: 300;
+    /* top: 380px; */
+    top: 30%;
+    position: relative;
+    /* position: fixed; */
+    text-align: center;
+    /* vertical-align: middle; */
+    text-shadow: 1px 1px 1px black;
+    color: white;
+    /* font-weight: bold; */
+    font-family: 'DM Serif Text', sans-serif;
+    line-height: 35px;
+}
+
 .banner-letter #name {
     color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: 'DM Serif Display', sans-serif;
     font-size: 128px;
     font-weight: 2000;
     /* color: black; */
