@@ -53,7 +53,7 @@ nav .logo {
     margin-right: auto;
     position: relative;
     transition: 0.6s;
-    text-shadow: 1px 1px 1px black;
+    /* text-shadow: 1px 1px 1px black; */
 }
 
 nav a.logo:hover {
@@ -128,7 +128,7 @@ nav.sticky {
     /* position: fixed; */
     width: 100%;
     height: 100vh;
-    background: url(picnic2.jpg);
+    background: url(cooking.jpeg);
     background-size: cover;
     /* z-index: -10; */
     /* background-color: transparent; */
@@ -140,7 +140,7 @@ nav.sticky {
     font-size: large;
     font-weight: 300;
     /* top: 380px; */
-    top: 40%;
+    top: 30%;
     position: relative;
     /* position: fixed; */
     text-align: center;
@@ -151,7 +151,7 @@ nav.sticky {
 .banner-letter #name {
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 32px;
+    font-size: 128px;
     font-weight: 2000;
     /* color: black; */
     letter-spacing: 5px;
@@ -164,6 +164,7 @@ nav.sticky {
 
 input {
     width: 35%;
+    /* height: 200%; */
     padding: 10px 10px;
     border: 1px solid darkgrey;
     border-radius: 50px;
@@ -171,4 +172,71 @@ input {
 
 input:focus {
     border: 3px solid rgb(115, 112, 112);
+}
+
+.anarticle {
+    padding: 10px;
+    /* border: 3px; */
+    /* border-style: solid; */
+    /* border-color: rgb(115, 112, 112); */
+    /* border-radius: 10px; */
+    margin: 50px;
+    border-bottom: 4px solid grey;
+    /* border-bottom-style: dotted;
+    border-bottom: thick green; */
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-size: 25px;
+    font-weight: 2000;
+}
+
+#lnk {
+    font-weight: bold;
+    font-size: 26px;
+    /* color: white; */
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+    margin-right: auto;
+    position: relative;
+    transition: 0.6s;
+}
+
+img {
+    height: auto;
+    width: 20%;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    margin-right: 100px;
+    margin-top: 20px;
+    /* margin-right: 10px; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: bold;
+    font-size: 16px;
+    /* color: white; */
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    line-height: 25px;
+
+    margin-right: 50px;
+    position: relative;
+    transition: 0.6s;
+    text-align: left;
+
+
+    /* text-align: center; */
 }
