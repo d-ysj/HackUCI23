@@ -1,4 +1,7 @@
 const options = { method: 'GET' };
+let keyCount = 0;
+let numdiets = 0;
+let DietBlobs = '';
 
 function callAPI(searchInput) {
     fetch('')
@@ -6,6 +9,7 @@ function callAPI(searchInput) {
 }
 
 function searchRecipes() {
+
     let searchInput = document.getElementById('search').value;
 
     let node = document.getElementById('result');
@@ -25,7 +29,26 @@ function searchRecipes() {
             document.body.innerHTML += '<id="result br>';
             document.body.innerHTML += '<id="result br>';
 
-            while (i < 5) {
+            keyCount = Object.keys(response).length;
+
+
+            if (keyCount == 0) {
+                document.body.innerHTML += '<article id="result" class="anarticle">' +
+
+                    '<p style="display:block; text-align: center;"> No results found. Lets try again! </p>' +
+
+                    '</article>';
+
+            }
+
+            while ((i < 5) && (i < keyCount)) {
+
+                numdiets = Object.keys(response[i].diets).length;
+                console.log(response[i].diets);
+                for (let j = 0; j < numdiets; j++) {
+                    DietBlobs += '<button class="blob" >' + response[i].diets[j] + '</button>';
+                }
+
                 document.body.innerHTML +=
                     '<article id="result" class="anarticle">' +
                     '<h2>' +
@@ -34,14 +57,16 @@ function searchRecipes() {
                     '<br>' + '<br>' + '<br>' +
                     // '<h2>' + response[i].title + '</h2>' +
                     '<img src="' + response[i].image + '" />' +
-                    '<p>' + response[i].summary + '" </p>' +
+                    '<p>' + response[i].summary + '" </p>' + DietBlobs +
 
-                    '<br>' + '<br>' + '<br>' + '<br>' + '<br>' + '<br>' + '<br>' +
+                    '<br>' + '<br>' + '<br>' + '<br>' +
 
                     '</article>';
 
                 document.body.innerHTML += '<id="result" br>';
                 document.body.innerHTML += '<id="result" br>';
+
+                DietBlobs = '';
                 i += 1;
             }
         })
@@ -52,3 +77,4 @@ window.addEventListener("scroll", function () {
     var nav = document.querySelector("nav");
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
+

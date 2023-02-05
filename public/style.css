@@ -7,7 +7,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 html {
@@ -102,6 +102,26 @@ nav .nav-links a {
     transition: all 0.3s ease 0s;
     position: relative;
 }
+
+.blob {
+    font-size: 16px;
+    font-weight: 500;
+    /* background-color: rgba(0, 136, 169, 1); */
+    background-color: #c4c98e;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+
+    padding: 6px 14px;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
 #contact:hover {
     color: rgb(225, 225, 225);
@@ -208,10 +228,11 @@ input:focus {
 
 h2 {
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Montserrat', sans-serif; */
     font-size: 25px;
     font-weight: 2000;
+    font-family: 'DM Serif Display', sans-serif;
 }
 
 #lnk {
@@ -256,6 +277,8 @@ p {
     position: relative;
     transition: 0.6s;
     text-align: left;
+    font-family: 'DM Serif Text', sans-serif;
+
 
 
     /* text-align: center; */
