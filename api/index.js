@@ -15,8 +15,8 @@ app.get('/api', (req, res) => {
             apiKey: '905ffe5d56f44e5e99d5b971cc4ce35e',
             ingredients: req.query.ingr,
             ignorePantry: 'true',
-            ranking: '2',
-            number: '2'
+            ranking: '1',
+            number: '5'
         }
     };
     console.timeEnd("test_timer");
